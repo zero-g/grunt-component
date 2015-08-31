@@ -1,12 +1,12 @@
 {
   "name": "grunt-component",
-  "description": "If you combine a seajs project file, this task can be used with the seajs module to load the corresponding",
-  "version": "0.0.1",
+  "description": "",
+  "version": "0.0.2",
   "homepage": "https://github.com/zero-g/grunt-component",
   "author": {
     "name": "zero-g",
-    "email": "seablue.java@gmail.com",
-    "url": "seablue.java@gmail.com"
+    "email": "793828297@qq.com",
+    "url": ""
   },
   "repository": {
     "type": "git",
@@ -27,9 +27,10 @@
   "scripts": {
     "test": "grunt test"
   },
+  "dependencies": {
+    "ali-arttemplate": "^3.0.3"
+  },
   "devDependencies": {
-    "ali-arttemplate": "^3.0.3",
-    "baidutemplate-x": "^1.0.6",
     "cssmin": "^0.4.3",
     "findup-sync": "^0.2.1",
     "grunt": "~0.4.5",
@@ -47,7 +48,7 @@
   "readmeFilename": "README.md",
   "gitHead": "4f90959b14cdc5769bc70be842a8351d5ea3b408",
   "_id": "grunt-component@0.0.1",
-  "_shasum": "adf5534fd55170d7bee2037fb0b3eec441f6b9a7",
+  "_shasum": "37e0f634b2c026ba36498a3f7903755c7eede11c",
   "dependencies": {
     "findup-sync": "^0.2.1"
   }
