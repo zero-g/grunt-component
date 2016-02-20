@@ -28,7 +28,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "ali-arttemplate": "^3.0.3"
+    "findup-sync": "^0.2.1"
   },
   "devDependencies": {
     "cssmin": "^0.4.3",
@@ -39,7 +39,7 @@
     "grunt-contrib-nodeunit": "^0.3.3"
   },
   "peerDependencies": {
-    "grunt": "~0.4.5"
+    "grunt": ">=0.4.0"
   },
   "keywords": [
     "gruntplugin"
@@ -48,8 +48,5 @@
   "readmeFilename": "README.md",
   "gitHead": "4f90959b14cdc5769bc70be842a8351d5ea3b408",
   "_id": "grunt-component@0.0.1",
-  "_shasum": "37e0f634b2c026ba36498a3f7903755c7eede11c",
-  "dependencies": {
-    "findup-sync": "^0.2.1"
-  }
+  "_shasum": "37e0f634b2c026ba36498a3f7903755c7eede11c"
 }
