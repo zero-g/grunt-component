@@ -27,7 +27,6 @@ module.exports = function(grunt) {
         });
         function parse(distFile, source) {
             source = source.replace(/__inline\([^\)].*\)/mg, function(matchString, index) {
-                debugger;
                 var compFile = matchString.match(/__inline\(["']([^"^']*)/)[1];
                 compFile = path.join(path.dirname(distFile), compFile); //以目标文件做相对路径
 
@@ -37,7 +36,6 @@ module.exports = function(grunt) {
                 } else {
                     compileSource = compileTmpl(compFile);
                 }
-                console.log(compileSource);
                 return compileSource;
             });
             return source;
@@ -45,6 +43,7 @@ module.exports = function(grunt) {
         function compileCss(compFile) {
             var result = fs.readFileSync(compFile, 'utf-8');
             result = cssmin(result);
+            result = result.replace(/\'/g, '"');
 
             return "__inline('" + result + "')";
         }
